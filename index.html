@@ -68,10 +68,82 @@
             </div>
 
             </div>
-            <div class="nav-top sticky">
+
+            <div class="nav-top">
+                <div class="nav-container">
+                    <nav class="navbar align-items-center">
+                        <ul class="navbar-nav d-flex flex-row">
+                            <li class="nav-item-list">
+                                <a href="index.html" class="nav-item-link">
+                                    home
+                                </a>
+                            </li>
+
+                            <li class="nav-item-list">
+                                <a href="feltshoes.html" class="nav-item-link">
+                                    felt shoes
+                                </a>
+                            </li>
+
+                            <li class="nav-item-list">
+                                <a href="feltballs.html" class="nav-item-link">
+                                    felt balls
+                                </a>
+                            </li>
+
+                            <li class="nav-item-list">
+                                <a href="contact.html" class="nav-item-link">
+                                    contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                   
+
+                </div>
+            </div>
+
+            <nav class="nav">
+                <input class="nav__trigger-input" type="checkbox" id="trigger" aria-label="open the navigation" />
+                <label class="nav__trigger-finger" for="trigger">
+                    <span></span>
+                </label>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <span class="nav__text">
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="ourprojects.html" class="nav__link">
+                            <span class="nav__text">
+                                Feltballs
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="ourteam.html" class="nav__link">
+                            <span class="nav__text">
+                               Feltshoes
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">
+                            <span class="nav__text">
+                                Contact
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- <div class="nav-top sticky">
                 <div class="nav-container">
                     <div class="row g-0">
-                        <!-- <div class="col-md-2">
+                        <div class="col-md-2 d-md-none">
                             <nav class="nav">
                                 <a href="#">
                                     <img src="img/pigsnpanda.png" alt="" class="logo">
@@ -106,7 +178,7 @@
                                     </li>
                                 </ul>
                             </nav>
-                        </div> -->
+                        </div>
 
                         <div class="col-md-12">
                             <nav class="navbar">
@@ -140,7 +212,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
 
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -167,10 +239,10 @@
             <div class="container position-relative">
                 <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
                     <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
-                        <i class="fas fa-angle-left fa-5x"></i>
+                        <i class="fas fa-angle-left"></i>
                     </li>
                     <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
-                        <i class="fas fa-angle-right fa-5x"></i>          
+                        <i class="fas fa-angle-right"></i>          
                     </li>
                 </ul>
                 <div class="new-slider">
@@ -338,7 +410,7 @@
             </div>
         </section>
 
-        <div class="categories">
+        <section class="categories">
             <h2 class="heading-secondary mt-5">categories</h2>
 
             <div class="container">
@@ -426,7 +498,24 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="aboutus">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="aboutus-des">
+                        <h2 class="heading-secondary text-start">About our Goals</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis fugit dolorum vero magnam quia nisi numquam accusamus error ab, corporis ut, ipsa sequi laudantium. Aut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vero quasi exercitationem non nisi dolor voluptatem vel ratione facilis voluptate odit autem quo suscipit cumque quia, consectetur molestiae qui deleniti fugiat laboriosam sunt? Sit explicabo ut necessitatibus, inventore blanditiis dignissimos voluptate quam praesentium illo repellat vel exercitationem. Deleniti, ex nesciunt?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum architecto illum reiciendis aliquam dolorem culpa non eius omnis, nam voluptas error temporibus eveniet totam rerum consectetur, dolor velit dicta nisi voluptate dolores? Distinctio unde ab architecto animi perferendis neque. Id, natus dolorum quia animi ab vero consequatur non necessitatibus pariatur!</p>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="video">
+                        <video controls src="video/coverr-embroidery-of-a-baby-s-name-5876-1080p.mp4" autoplay muted></video>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="testimonials">
             <div class="container">
@@ -609,7 +698,7 @@
                     </ul>
                 </div>
 
-                <div class="col-md-4 col-6">
+                <div class="col-md-4">
                     <h3 class="heading-tertiary">
                         Quick Links
                     </h3>
@@ -627,7 +716,7 @@
                     </ul>
                 </div>
 
-                <div class="col-md-4 col-6">
+                <div class="col-md-4">
                     <h3 class="heading-tertiary">
                         contact
                     </h3>
@@ -693,7 +782,7 @@
                     gutter: 20,
                 },
                 700: {
-                    edgePadding: 20,
+                    
                     items: 2
 
                 },
@@ -738,6 +827,11 @@
 
                 },
                 900: {
+                    items: 3,
+                    gutter: 20
+
+                },
+                1000: {
                     items: 4,
                     gutter: 20
 
@@ -745,7 +839,12 @@
             }
         });
 
+
+
     </script>
+
+<script src="js/script.js"></script>
+
 </body>
 
 </html>

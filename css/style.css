@@ -68,6 +68,14 @@ img {
     max-width: 75%;
 }
 
+section {
+    padding-top: 10rem;
+}
+
+p {
+    font-family: var(--secondary-font);
+}
+
 /* ----- TYPOGRAPHY ----- */
 .heading-primary {
     font-size: 6rem;
@@ -88,7 +96,6 @@ img {
 .heading-tertiary {
     font-size: 2rem;
     text-transform: uppercase;
-    text-align: center;
     color: #444;
     margin-top: 1.2rem;
     margin-bottom: 2rem;
@@ -115,13 +122,14 @@ img {
     left: 0;
     z-index: 2;
     width: 100%;
+    background-color: #081a70;
+    padding: .6rem 0;
 }
 
 .sticky {
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     width: 100%;
-    background-color: #081a70;
     z-index: 8;
 }
 
@@ -129,14 +137,6 @@ img {
     max-width: 4rem;
     margin-top: 1rem;
 }
-
-.nav-top {
-    padding: .6rem 0;
-}
-
-
-
-
 
 .logo-click {
     max-width: 30rem;
@@ -219,7 +219,7 @@ img {
 /* ----- MOBILE NAVIGATION ----- */
 .nav {
     color: white;
-    display: block;
+    display: none;
 }
 
 .nav__trigger-finger {
@@ -229,8 +229,8 @@ img {
     z-index: 10;
     display: flex;
     align-items: center;
-    width: 20px;
-    height: 14px;
+    width: 30px;
+    height: 20px;
     margin: 20px;
     color: #fff;
 }
@@ -241,8 +241,8 @@ img {
     left: -5px;
     bottom: -5px;
     right: -5px;
-    background: #444;
-    opacity: 0.5;
+    background: #081a70;
+ 
     z-index: -1;
     transition: opacity 0.3s cubic-bezier(0.75, 0, 0.25, 1);
 }
@@ -318,7 +318,7 @@ img {
     bottom: 0;
     right: 0;
     z-index: -1;
-    background: #444;
+    background: #081a70;
     font-size: 4rem;
     padding: 40px;
     transform: translate(200vw) rotate(45deg);
@@ -361,7 +361,8 @@ img {
 
 .whats-new {
     background-color: #e2e2e2;
-    padding: 4rem;
+    padding: 10rem 0;
+
     position: relative;
 }
 
@@ -385,6 +386,7 @@ img {
     text-transform: capitalize;
     display: block;
     font-weight: 400;
+    font-family: var(--secondary-font);
 }
 
 .price {
@@ -417,14 +419,38 @@ img {
 .controls:focus {
   outline: none;
 }
+
+.controls li {
+    background-color: #081a70;
+    border-radius: 20%;
+    width: 5rem;
+    height: 5rem;
+    line-height: ;
+    text-align: center;
+    color: #fff;
+}
+
 .controls li:hover {
   cursor: pointer;
 }
 
-/* ----- TESTIMONIALS ----- */
-.testimonials {
-    margin-top: 10rem;
+.controls i {
+    font-size: 3rem;
+    line-height: 5rem;
 }
+
+/* ----- ABOUT US ----- */
+
+.aboutus-des {
+    padding: 0 2rem;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* ----- TESTIMONIALS ----- */
 
 .testimonials-details {
     position: relative;
@@ -478,6 +504,10 @@ img {
     padding: 6rem 0;
     padding-bottom: 0;
     margin-top: 8rem;
+}
+
+footer h3 {
+    text-align: left;
 }
 
 .main-logo {
@@ -741,13 +771,31 @@ p::before {
 
 /* 768px tablet */
 @media only screen and (max-width: 48em) {
-    .navbar {
+    .logo-click {
+        margin: auto;
+    }
+    
+    .top-search {
+        width: 80%;
+        margin: auto;
+    }
+
+    .cart-check {
+        margin: 2rem 0;
+    }
+
+    .nav-top {
         display: none;
     }
 
     .nav {
         display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
     }
+
 
     .footer {
         margin-top: 4rem;
@@ -775,6 +823,10 @@ p::before {
 
     .heading-secondary {
         font-size: 2.8rem;
+    }
+
+    .navbar {
+        display: none;
     }
 
     .cat-head {
