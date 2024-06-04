@@ -174,36 +174,29 @@
     <main>
 
         <div class="container">
-            <div class="login">
+            <div class="register">
                 <div class="container">
-                  <h2 class="heading-secondary">Login</h2>
-                 
+                  <h2 class="heading-secondary">Register Here</h2>
+                  
                   <div class="login-form-grids">
-                                            <form method="post">
-                      <input type="hidden" name="" >
+                                   
+                    <form>
+                      <input type="hidden">
                       
-                                <input type="text" class="form-control" placeholder="Email" name="email"  value=""  required autofocus />
+                                <input class="form-control" type="text" placeholder="First Name" name="firstname" value="" required="">
+                      <input class="form-control" type="text" placeholder="Last name" name="lastname" value="" required="">
+                      <input class="form-control" type="text" placeholder="Phone no" name="email" value="" required="">
+                      <input class="form-control" type="email" placeholder="Email" name="email" value="" required="">
+                      <input class="form-control" type="password" placeholder="Password" name="password" required="">
                        
-                    
-                      <input type="password" class="form-control" placeholder="Password" name="password" required />
-                       
-                      <div class="forgot">
-                        <a href="#"  data-dismiss="modal" data-toggle="modal" data-target="#ForgetPasswordformModal">Forgot Password?</a>
-                      </div>
-                      <!-- <div class="CBox">
-                        <label>
-                          <input type="checkbox" name="remember" >
-                          Remember me
-                        </label>
-                      </div> -->
-                      <input type="submit" value="Login" >
-                      <p> </p>
+                      <input class="form-control" type="password" placeholder="Confirm Password" name="password_confirmation" required="">
+                      
+                      <input class="form-control" class="BtnDefault" type="submit" value="Register">
                     </form>
                   </div>
-                  <!-- <h4 class="">For New People</h4> -->
                   <p class="login-para">
-                    Dont have an account?
-                    <a href="register.html"> Register Here</a> </p>
+                    Already have an account?
+                    <a href="signin.html"> Login Here</a> </p>
                 </div>
               </div>
         </div>

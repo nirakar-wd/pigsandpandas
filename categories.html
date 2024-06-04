@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigs & Pandas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css"
+        integrity="sha512-06CZo7raVnbbD3BlY8/hGUoUCuhk8sTdVGV3m3nuh9i2R+UmkLbLRTE/My8TuJ3ALbDulhBObJQWtOUt0mXzNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+
+        <div class="header-logo-search px-5">
+            <div class="row align-items-center g-0">
+                <div class="col-lg-3 col-md-4">
+                    <a href="index.html" class="logo-click">
+                        <img src="img/pigsnpanda.png" alt="">
+                    </a>
+
+                </div>
+                <div class="col-lg-6 col-md-4">
+                    <form class="d-flex">
+                        <input type="text" class="form-control top-search" placeholder="Search here">
+                        <button class="btn btn-search" type="submit">
+                            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-4">
+
+                    <div class="cart-check d-flex justify-content-md-end justify-content-center">
+                        <div class="cart-icon">
+                            <a href="#" class="mx-3 cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+
+                            </a>
+                            <a href="#" class="cart-btn">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="text">login</span>
+                            </a>
+                            <a href="#" class="cart-btn">
+                                sign up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="nav-top">
+            <div class="nav-container">
+                <nav class="d-flex justify-content-center">
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item-list">
+                            <a href="index.html" class="nav-item-link">
+                                home
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item-list">
+                            <a href="product.html" class="nav-item-link">
+                                felt shoes
+                            </a>
+                            <ul class="nav-sub">
+
+                                <li><a href="account.html">product</a></li>
+                                <li><a href='product.html'>product</a></li>
+                                <li><a href='product.html'>product</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item-list">
+                            <a href="product.html" class="nav-item-link">
+                                felt balls
+                            </a>
+                        </li>
+
+                        <li class="nav-item-list">
+                            <a href="contact.html" class="nav-item-link">
+                                contact
+                            </a>
+                        </li>
+
+                        <li class="nav-item-list align-self-center">
+                            <a href="wholesale.html" class="nav-item-link we-link">
+                                wholesale enquiry
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+
+
+
+
+                </nav>
+
+
+            </div>
+        </div>
+
+        <nav class="nav">
+            <input class="nav__trigger-input" type="checkbox" id="trigger" aria-label="open the navigation" />
+            <label class="nav__trigger-finger" for="trigger">
+                <span></span>
+            </label>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">
+                        <span class="nav__text">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="product.html" class="nav__link">
+                        <span class="nav__text">
+                            Feltballs
+                        </span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="ourteam.html" class="nav__link">
+                        <span class="nav__text">
+                            Feltshoes
+                        </span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">
+                        <span class="nav__text">
+                            Contact
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+    <main>
+
+        <!-- Shop Grid Page Section Start -->
+        <div class="product-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-3">
+                        <div class="left-sidebar">
+
+                            <!-- product categories Section Start -->
+                            <div class="sidebar-box pb30">
+                                <h3 class="heading-tertiary">Product Categories</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Feltballs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Feltshoes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Feltballs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Feltshoes</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <!-- Filter By Price -->
+
+                            <h3 class="heading-tertiary mt-5">filter by price</h3>
+                            <div class="price-ranger">
+                                <div class="price-input">
+                                    <div class="field">
+                                        <span>Min</span>
+                                        <input type="number" class="input-min" value="2500">
+                                    </div>
+                                    <div class="separator">-</div>
+                                    <div class="field">
+                                        <span>Max</span>
+                                        <input type="number" class="input-max" value="7500">
+                                    </div>
+                                </div>
+                                <div class="slider">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-9 order-first order-lg-last">
+                        <!-- List, Grid View and Sort by Section -->
+                        <div class="list-grid-sort">
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="sizeinproduct">
+                                        <ul>
+                                            <li class="fontsize_mks">Sort By : </li>
+                                            <li>
+                                                <div class="custom_selectmks">
+                                                    <select class="form-select">
+                                                        <option>Relevance</option>
+                                                        <option>Name (A - Z)</option>
+                                                        <option>Name (Z - A)</option>
+                                                        <option>Price (Low &gt; High)</option>
+                                                        <option>Rating (Lowest)</option>
+                                                        <option>Model (A - Z)</option>
+                                                        <option>Model (Z - A)</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="show-result">
+                                        <p>Showing 1–12 of 15 results</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-sidebar">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="abox">
+                                        <div class="kecimgbox"> <a href="product.html"><img src="img/pigsnpanda.png"
+                                                    class="img-fluid" alt="prod images"></a>
+                                            <!-- <div class="addcard-wishlist">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i> add to cart</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+                                                </ul>
+                                            </div> -->
+                                        </div>
+                                        <div class="prod-desc">
+                                            <h4><a href="product.html">Felt product</a></h4>
+                                            <div class="rating-mks"> <span><i class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> </div>
+                                            <del>$2500.00</del> <ins>$1900.00</ins>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="abox">
+                                        <div class="kecimgbox"> <a href="product.html"><img src="img/pigsnpanda.png"
+                                                    class="img-fluid" alt="prod images"></a>
+                                            <!-- <div class="addcard-wishlist">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i> add to cart</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+                                                </ul>
+                                            </div> -->
+                                        </div>
+                                        <div class="prod-desc">
+                                            <h4><a href="product.html">Felt product</a></h4>
+                                            <div class="rating-mks"> <span><i class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> </div>
+                                            <del>$2500.00</del> <ins>$1900.00</ins>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="abox">
+                                        <div class="kecimgbox"> <a href="product.html"><img src="img/pigsnpanda.png"
+                                                    class="img-fluid" alt="prod images"></a>
+                                            <!-- <div class="addcard-wishlist">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i> add to cart</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+                                                </ul>
+                                            </div> -->
+                                        </div>
+                                        <div class="prod-desc">
+                                            <h4><a href="product.html">Felt product</a></h4>
+                                            <div class="rating-mks"> <span><i class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> </div>
+                                            <del>$2500.00</del> <ins>$1900.00</ins>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="abox">
+                                        <div class="kecimgbox"> <a href="product.html"><img src="img/pigsnpanda.png"
+                                                    class="img-fluid" alt="prod images"></a>
+                                            <!-- <div class="addcard-wishlist">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i> add to cart</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+                                                </ul>
+                                            </div> -->
+                                        </div>
+                                        <div class="prod-desc">
+                                            <h4><a href="product.html">Felt product</a></h4>
+                                            <div class="rating-mks"> <span><i class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> </div>
+                                            <del>$2500.00</del> <ins>$1900.00</ins>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="abox">
+                                        <div class="kecimgbox"> <a href="product.html"><img src="img/pigsnpanda.png"
+                                                    class="img-fluid" alt="prod images"></a>
+                                            <!-- <div class="addcard-wishlist">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i> add to cart</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+                                                </ul>
+                                            </div> -->
+                                        </div>
+                                        <div class="prod-desc">
+                                            <h4><a href="product.html">Felt product</a></h4>
+                                            <div class="rating-mks"> <span><i class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> </div>
+                                            <del>$2500.00</del> <ins>$1900.00</ins>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="abox">
+                                        <div class="kecimgbox"> <a href="product.html"><img src="img/pigsnpanda.png"
+                                                    class="img-fluid" alt="prod images"></a>
+                                            <!-- <div class="addcard-wishlist">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i> add to cart</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+                                                </ul>
+                                            </div> -->
+                                        </div>
+                                        <div class="prod-desc">
+                                            <h4><a href="product.html">Felt product</a></h4>
+                                            <div class="rating-mks"> <span><i class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> <span><i
+                                                        class="fa fa-star"></i></span> </div>
+                                            <del>$2500.00</del> <ins>$1900.00</ins>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+
+                            <!-- Pagination Section
+                            <div class="pagination-sec">
+                                <nav class="pagination pagination_type1">
+                                    <ol class="pagination__list">
+                                        <li class="pagination__group"><a href="#0"
+                                                class="pagination__item pagination__control pagination__control_prev">prev</a>
+                                        </li>
+                                        <li class="pagination__group"><span
+                                                class="pagination__item pagination__item_active">1</span></li>
+                                        <li class="pagination__group"><a href="#0" class="pagination__item">2</a></li>
+                                        <li class="pagination__group"><a href="#0" class="pagination__item">3</a></li>
+                                        <li class="pagination__group"><a href="#0"
+                                                class="pagination__item pagination__control pagination__control_next">next</a>
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="services">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-tag fa-2xl"></i>
+                                <div class="card-title">
+                                    best price guaranteed
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-truck fa-2xl"></i>
+                                <div class="card-title">
+                                    worldwide shipping
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-leaf fa-2xl"></i>
+                                <div class="card-title">
+                                    eco-friendly
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <i class="fa-solid fa-headset fa-2xl"></i>
+                                <div class="card-title">
+                                    24/7 customer support
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer-links">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- <div class="main-logo">
+                                <a href="index.html">
+                                    <img src="img/WhatsApp Image 2024-04-04 at 16.48.26.jpeg" alt="footer-logo">
+                                </a>
+                            </div> -->
+
+                        <h3 class="heading-tertiary">
+                            pigs and pandas
+                        </h3>
+
+                        <p class="footer-au">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eligendi
+                            dolorem, facilis aperiam dolore ipsa rem! Accusamus voluptate quidem assumenda possimus, quo
+                            quia sunt laborum odio expedita qui facilis excepturi?</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="heading-tertiary">
+                            Quick Links
+                        </h3>
+                        <ul class="footer-nav">
+                            <li class="footer-nav-list">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="footer-nav-list">
+                                <a href="aboutus.html">About Us</a>
+                            </li>
+                            <li class="footer-nav-list">
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="heading-tertiary">
+                            contact
+                        </h3>
+
+                        <p class="address position-relative mb-4">Kathmandu</p>
+                        <p class="phone position-relative mb-4">+97798080000</p>
+                        <p class="mail position-relative">mail@hotmail.com</p>
+
+                        <div class="social-link">
+                            <h4 class="heading-social">
+                                Follow us on:
+                            </h4>
+                            <ul>
+                                <li class="d-flex">
+                                    <a href="#" class="social-icon">
+                                        <img src="img/facebook.png" alt="fbicon">
+                                    </a>
+                                    <a href="#" class="social-icon">
+                                        <img src="img/instagram(1).png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="d-flex rr-po justify-content-between align-items-center">
+
+                    <p class="para-rights text-center">
+                        all rights reserved xyz &copy; 2024
+                    </p>
+
+                    <div class="payopt d-flex">
+                        <figure>
+                            <img src="img/american-express.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="img/card.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="img/discover.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="img/visa.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- TINY SLIDER -->
+
+    <script>
+
+        var slider = tns({
+            container: '.my-slider',
+            items: 3,
+            loop: true,
+            speed: 500,
+            autoplay: true,
+            controls: false,
+            slideBy: 1,
+            mouseDrag: true,
+            nav: false,
+            autoplayButtonOutput: false,
+            autoHeight: true,
+            responsive: {
+                200: {
+                    items: 1,
+                    autoHeight: false,
+                    edgePadding: 20
+
+                },
+
+                400: {
+                    items: 1,
+                    gutter: 10
+                },
+                640: {
+                    gutter: 20,
+                    edgePadding: 20
+                },
+                700: {
+
+                    items: 2,
+                    edgePadding: 20
+
+
+                },
+                900: {
+                    items: 2,
+                    gutter: 50,
+                    edgePadding: 50
+
+                }
+            }
+        });
+
+        var slider = tns({
+            container: '.new-slider',
+            items: 3,
+            loop: true,
+            speed: 500,
+            autoplay: true,
+            controls: true,
+            slideBy: 1,
+            mouseDrag: true,
+            nav: false,
+            autoplayButtonOutput: false,
+            autoHeight: true,
+            controlsContainer: "#customize-controls",
+            responsive: {
+                200: {
+                    items: 1,
+                    autoHeight: false,
+
+                },
+
+                400: {
+                    items: 2,
+                    gutter: 10
+                },
+                640: {
+                    gutter: 20,
+                    items: 2
+                },
+                700: {
+
+                    items: 3
+
+                },
+                900: {
+                    items: 3,
+                    gutter: 20
+
+                },
+                1000: {
+                    items: 4,
+                    gutter: 20
+
+                }
+            }
+        });
+
+
+
+    </script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

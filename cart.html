@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pigs & Bears</title>
+    <title>Pigs & Pandas</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
 
@@ -37,13 +39,13 @@
 
         <div class="header-logo-search px-5">
             <div class="row align-items-center g-0">
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4">
                     <a href="index.html" class="logo-click">
                         <img src="img/pigsnpanda.png" alt="">
                     </a>
 
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-4">
                     <form class="d-flex">
                         <input type="text" class="form-control top-search" placeholder="Search here">
                         <button class="btn btn-search" type="submit">
@@ -51,9 +53,9 @@
                         </button>
                     </form>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4">
 
-                    <div class="cart-check d-flex justify-content-end">
+                    <div class="cart-check d-flex justify-content-md-end justify-content-center">
                         <div class="cart-icon">
                             <a href="#" class="mx-3 cart-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
@@ -92,7 +94,7 @@
                             </a>
                             <ul class="nav-sub">
 
-                                <li><a href="product.html">product</a></li>
+                                <li><a href="account.html">product</a></li>
                                 <li><a href='product.html'>product</a></li>
                                 <li><a href='product.html'>product</a></li>
                                
@@ -144,7 +146,7 @@
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="ourprojects.html" class="nav__link">
+                    <a href="product.html" class="nav__link">
                         <span class="nav__text">
                             Feltballs
                         </span>
@@ -171,53 +173,124 @@
         
     </header>
 
-    <main>
+   <main class="shopping-cart">
 
-        <div class="container">
-            <div class="login">
-                <div class="container">
-                  <h2 class="heading-secondary">Login</h2>
-                 
-                  <div class="login-form-grids">
-                                            <form method="post">
-                      <input type="hidden" name="" >
-                      
-                                <input type="text" class="form-control" placeholder="Email" name="email"  value=""  required autofocus />
-                       
-                    
-                      <input type="password" class="form-control" placeholder="Password" name="password" required />
-                       
-                      <div class="forgot">
-                        <a href="#"  data-dismiss="modal" data-toggle="modal" data-target="#ForgetPasswordformModal">Forgot Password?</a>
-                      </div>
-                      <!-- <div class="CBox">
-                        <label>
-                          <input type="checkbox" name="remember" >
-                          Remember me
-                        </label>
-                      </div> -->
-                      <input type="submit" value="Login" >
-                      <p> </p>
-                    </form>
-                  </div>
-                  <!-- <h4 class="">For New People</h4> -->
-                  <p class="login-para">
-                    Dont have an account?
-                    <a href="register.html"> Register Here</a> </p>
+    <div class="container">
+        <h2 class="heading-secondary mb-5">
+            shopping cart
+        </h2>
+
+        <div class="cart-box">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">product</th>
+                            <th scope="col">decription</th>
+                            <th scope="col">quantity</th>
+                            <th scope="col">price</th>
+                            <th scope="col">delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                                <img src="https://images.unsplash.com/photo-1595341595379-cf1cb694ea1f?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </th>
+                            <td>wool felt</td>
+                            <td>4</td>
+                            <td>$500</td>
+                            <td>
+                                <a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <img src="https://images.unsplash.com/photo-1595341595379-cf1cb694ea1f?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </th>
+                            <td>wool felt</td>
+                            <td>4</td>
+                            <td>$500</td>
+                            <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <img src="https://images.unsplash.com/photo-1595341595379-cf1cb694ea1f?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </th>
+                            <td>wool felt</td>
+                            <td>4</td>
+                            <td>$500</td>
+                            <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    <!-- <div class="row">
+                        <div class="col-md-3">
+                            <h3 class="heading-tertiary">product</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="heading-tertiary">description</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="heading-tertiary">quantity</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="heading-tertiary">price</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="https://images.unsplash.com/photo-1595341595379-cf1cb694ea1f?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <p>wool pigs and pandas</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>4</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>$20</p>
+                        </div>
+                    </div> -->
                 </div>
-              </div>
-        </div>
-        
-        
 
-    </main>
+                <div class="col-md-3">
+                    <div class="order-summary">
+                        <div class="order-heading">order summary</div>
+                        <div class="pro-price d-flex">
+                            <span>2 products</span>
+                            <span>$500</span>
+                        </div>
+                        <div class="pro-price d-flex pp-2 ">
+                            <span>shipping</span>
+                            <span>free</span>
+                        </div>
+                        <div class="total-cost d-flex">
+                            <span>total</span>
+                            <span>$1200</span>
+                        </div>
+                        <div class="order-checkout">
+                            <a href="checkout.html"><button class="btn btn-checkout" >checkout</button></a>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </main>
 
     <footer class="footer">
         <div class="container">
 
             <div class="services">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="card">
                             <div class="card-body">
                                 <i class="fa-solid fa-tag fa-2xl"></i>
@@ -229,7 +302,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="card">
                             <div class="card-body">
                                 <i class="fa-solid fa-truck fa-2xl"></i>
@@ -241,7 +314,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="card">
                             <div class="card-body">
                                 <i class="fa-solid fa-leaf fa-2xl"></i>
@@ -253,7 +326,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="card">
 
                             <div class="card-body">
@@ -365,9 +438,9 @@
         </div>
 
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 
+    <script src="js/bootstrap.bundle.min.js"></script>
     <!-- TINY SLIDER -->
 
     <script>
@@ -388,6 +461,7 @@
                 200: {
                     items: 1,
                     autoHeight: false,
+                    edgePadding: 20
 
                 },
 
@@ -397,21 +471,75 @@
                 },
                 640: {
                     gutter: 20,
+                    edgePadding: 20
                 },
                 700: {
-                    edgePadding: 20,
-                    items: 2
+
+                    items: 2,
+                    edgePadding: 20
+
 
                 },
                 900: {
                     items: 2,
+                    gutter: 50,
+                    edgePadding: 50
+
+                }
+            }
+        });
+
+        var slider = tns({
+            container: '.new-slider',
+            items: 3,
+            loop: true,
+            speed: 500,
+            autoplay: true,
+            controls: true,
+            slideBy: 1,
+            mouseDrag: true,
+            nav: false,
+            autoplayButtonOutput: false,
+            autoHeight: true,
+            controlsContainer: "#customize-controls",
+            responsive: {
+                200: {
+                    items: 1,
+                    autoHeight: false,
+                    
+                },
+
+                400: {
+                    items: 2,
+                    gutter: 10
+                },
+                640: {
+                    gutter: 20,
+                    items: 2
+                },
+                700: {
+
+                    items: 3
+
+                },
+                900: {
+                    items: 3,
+                    gutter: 20
+
+                },
+                1000: {
+                    items: 4,
                     gutter: 20
 
                 }
             }
         });
 
+
+
     </script>
+
+    <script src="js/script.js"></script>
 
 </body>
 
