@@ -35,57 +35,72 @@
     <header class="header">
 
 
-        <div class="header-logo-search">
+        <div class="header-logo-search px-5">
             <div class="row align-items-center g-0">
-                <div class="col-md-4">
-                    <a href="#">
-                        <img src="img/pigsnpanda.png" alt="" class="logo-click">
+                <div class="col-md-3">
+                    <a href="index.html" class="logo-click">
+                        <img src="img/pigsnpanda.png" alt="">
                     </a>
 
                 </div>
-                <div class="col-md-4 align-self-center">
-                    <div class="mb-3">
-                        <input type="search" class="form-control top-search" placeholder="Search our catalog">
-                    </div>
-
+                <div class="col-md-6">
+                    <form class="d-flex">
+                        <input type="text" class="form-control top-search" placeholder="Search here">
+                        <button class="btn btn-search" type="submit">
+                            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                        </button>
+                    </form>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
 
-                    <div class="cart-check d-flex justify-content-center">
+                    <div class="cart-check d-flex justify-content-end">
                         <div class="cart-icon">
-                            <a href="#" class="mx-3">
+                            <a href="#" class="mx-3 cart-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
-                                CART
+
                             </a>
-                            <a href="#">
-                                Checkout
+                            <a href="#" class="cart-btn">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="text">login</span>
+                            </a>
+                            <a href="#" class="cart-btn">
+                                sign up
                             </a>
                         </div>
                     </div>
                 </div>
+
             </div>
-        </div>
 
         </div>
+
 
         <div class="nav-top">
             <div class="nav-container">
-                <nav class="navbar align-items-center">
+                <nav class="d-flex justify-content-center">
                     <ul class="navbar-nav d-flex flex-row">
                         <li class="nav-item-list">
                             <a href="index.html" class="nav-item-link">
                                 home
                             </a>
+
                         </li>
 
                         <li class="nav-item-list">
-                            <a href="feltshoes.html" class="nav-item-link">
+                            <a href="product.html" class="nav-item-link">
                                 felt shoes
                             </a>
+                            <ul class="nav-sub">
+
+                                <li><a href="product.html">product</a></li>
+                                <li><a href='product.html'>product</a></li>
+                                <li><a href='product.html'>product</a></li>
+                               
+                            </ul>
                         </li>
 
                         <li class="nav-item-list">
-                            <a href="feltballs.html" class="nav-item-link">
+                            <a href="product.html" class="nav-item-link">
                                 felt balls
                             </a>
                         </li>
@@ -95,7 +110,20 @@
                                 contact
                             </a>
                         </li>
+
+                        <li class="nav-item-list align-self-center">
+                            <a href="wholesale.html" class="nav-item-link we-link">
+                                wholesale enquiry
+                            </a>
+                        </li>
+
+
+
                     </ul>
+
+
+
+
                 </nav>
 
 
@@ -140,6 +168,7 @@
         </nav>
 
 
+        
     </header>
 
     <main>
@@ -312,79 +341,156 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <!-- <div class="main-logo">
-                        <a href="index.html">
-                            <img src="img/logo-btsyc.png" alt="footer-logo">
-                        </a>
-                    </div> -->
 
-                    <h3 class="heading-tertiary">
-                        about
-                    </h3>
+            <div class="services">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-tag fa-2xl"></i>
+                                <div class="card-title">
+                                    best price guaranteed
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-truck fa-2xl"></i>
+                                <div class="card-title">
+                                    worldwide shipping
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-leaf fa-2xl"></i>
+                                <div class="card-title">
+                                    eco-friendly
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
 
-                    <ul class="footer-nav">
-                        <li class="footer-nav-list">
-                            <a href="whoarewe.html">who are we</a>
-                        </li>
-                        <li class="footer-nav-list">
-                            <a href="aboutus.html">our team</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="col-md-4">
-                    <h3 class="heading-tertiary">
-                        Quick Links
-                    </h3>
-                    <ul class="footer-nav">
-                        <li class="footer-nav-list">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="footer-nav-list">
-                            <a href="aboutus.html">About Us</a>
-                        </li>
-                        <li class="footer-nav-list">
-                            <a href="contact.html">Contact Us</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="col-md-4">
-                    <h3 class="heading-tertiary">
-                        contact
-                    </h3>
-
-                    <p class="address position-relative mb-4">Kathmandu</p>
-                    <p class="phone position-relative mb-4">+97798080000</p>
-                    <p class="mail position-relative">mail@hotmail.com</p>
-
-                    <div class="social-link">
-                        <h4 class="heading-social">
-                            Follow us on:
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="#" class="social-icon">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
+                            <div class="card-body">
+                                <i class="fa-solid fa-headset fa-2xl"></i>
+                                <div class="card-title">
+                                    24/7 customer support
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
+
             </div>
+
+        </div>
+        <div class="footer-links">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- <div class="main-logo">
+                                <a href="index.html">
+                                    <img src="img/WhatsApp Image 2024-04-04 at 16.48.26.jpeg" alt="footer-logo">
+                                </a>
+                            </div> -->
+
+                        <h3 class="heading-tertiary">
+                            pigs and pandas
+                        </h3>
+
+                        <p class="footer-au">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eligendi
+                            dolorem, facilis aperiam dolore ipsa rem! Accusamus voluptate quidem assumenda possimus, quo
+                            quia sunt laborum odio expedita qui facilis excepturi?</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="heading-tertiary">
+                            Quick Links
+                        </h3>
+                        <ul class="footer-nav">
+                            <li class="footer-nav-list">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="footer-nav-list">
+                                <a href="aboutus.html">About Us</a>
+                            </li>
+                            <li class="footer-nav-list">
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="heading-tertiary">
+                            contact
+                        </h3>
+
+                        <p class="address position-relative mb-4">Kathmandu</p>
+                        <p class="phone position-relative mb-4">+97798080000</p>
+                        <p class="mail position-relative">mail@hotmail.com</p>
+
+                        <div class="social-link">
+                            <h4 class="heading-social">
+                                Follow us on:
+                            </h4>
+                            <ul>
+                                <li class="d-flex">
+                                    <a href="#" class="social-icon">
+                                        <img src="img/facebook.png" alt="fbicon">
+                                    </a>
+                                    <a href="#" class="social-icon">
+                                        <img src="img/instagram(1).png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="d-flex rr-po justify-content-between align-items-center">
+
+                    <p class="para-rights text-center">
+                        all rights reserved xyz &copy; 2024
+                    </p>
+
+                    <div class="payopt d-flex">
+                        <figure>
+                            <img src="img/american-express.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="img/card.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="img/discover.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="img/visa.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
-        <p class="para-rights text-center">
-            all rights reserved xyz &copy; 2024
-        </p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
