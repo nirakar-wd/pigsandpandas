@@ -67,3 +67,6 @@ rangeInput.forEach((input) => {
               document.getElementById('inputState').value = this.value;
           }
       });
+
+
+      // JS for number increase and decrease
