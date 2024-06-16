@@ -173,51 +173,209 @@
 
     <main>
 
-        <main>
+        <div class="dashboard">
 
+            <!-- <aside>
+                <div class="profile-box">
+                    <div class="prof-avatar">
+                        <img src="resources/img/user.png" alt="user" class="prof-photo img-fluid">
+                        <strong class="username">Ram</strong>
+                        <span><i class="fas fa-pencil-alt"></i></span>
+                    </div>
+                    <div class="prof-details">
+                        <p>Profile Details</p>
+                    </div>
+                </div>
+    
+                <div class="seller-nav">
+                    <div class="active">
+                        <a href="#"><i class="fas fa-home"></i>Dashboard</a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-user-alt"></i>Company Profile</a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-home"></i>Dashboard</a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-home"></i>Dashboard</a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-home"></i>Dashboard</a>
+                    </div>
+                </div>
+            </aside> -->
             <div class="container">
-                <div class="register">
-                    <div class="container">
-                        <h2 class="heading-secondary">wholesale form</h2>
-
-                        <div class="login-form-grids">
-
-                            <form>
-                                <input type="hidden">
-
-                                <input class="form-control" type="text" placeholder="Business Name" name="businessname"
-                                    value="" required="">
-                                <input class="form-control" type="text" placeholder="First Name" name="firstname"
-                                    value="" required="">
-                                <input class="form-control" type="text" placeholder="Last name" name="lastname" value=""
-                                    required="">
-                                <input class="form-control" type="text" placeholder="Phone no" name="email" value=""
-                                    required="">
-                                <input class="form-control" type="email" placeholder="Email" name="email" value=""
-                                    required="">
-                                <input class="form-control" type="text" placeholder="State" name="state" value=""
-                                    required="">
-                                <input class="form-control" type="text" placeholder="Zip Code" name="zipcode" value=""
-                                    required="">
-                                <select name="country" id="country" class="form-control">
-                                    <option value="">Country</option>
-                                </select>
-
-
-                                <input class="form-control" class="BtnDefault" type="submit" value="Register">
-                            </form>
+                <div class="content-wrapper">
+                    <div class="company-profile-header">
+                        <div class="page-head">
+                            <h2 class="heading-secondary">Manage Profile</h2>
                         </div>
-                        <p class="login-para">
-                            Already have an account?
-                            <a href="signin.html"> Login Here</a>
-                        </p>
+                        <div class="contactprofiletab">
+                            <section class="personal-details">
+                                <div class="row">
+                                    <div class="col-lg-2">
+
+                                        <div class="profile-box">
+                                            <span>Profile Picture</span>
+                                            <div class="profile_photo">
+                                                <img src="img/user.png" alt="user" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="input__form">
+                                            <div class="row">
+                                                <div class="col-lg-6 ">
+                                                    <form>
+                                                        <div class="form-group form-input">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <input type="text" id="firstName"
+                                                                        placeholder="First Name" required>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <input type="text" id="lastName"
+                                                                        placeholder="Last Name">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-input">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <input type="text" id="ceofirstName"
+                                                                        placeholder="CEO First Name" required>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <input type="text" id="ceolastName"
+                                                                        placeholder=" CEO Last Name">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-input">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <input type="text" placeholder="Company Name"
+                                                                        required>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <input type="text" placeholder="Designation">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+
+                                                <div class="offset-md-6"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="address-details">
+                                <div class="row">
+                                    <div class="col-lg-2">
+
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="input__form">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <form>
+                                                        <div class="form-group form-input">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <input type="text" placeholder="Address" required>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <input type="text"
+                                                                        placeholder="Address (Area/Street)">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-input">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <input type="text" placeholder="Country" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-input">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <input type="text" placeholder="GSTIN">
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <input type="text" placeholder="Company Website">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+
+                                                <div class="offset-md-6"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="contact-details">
+                                <div class="row">
+                                    <div class="col-lg-2">
+
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="input__form">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <form>
+                                                        <div class="form-group form-input">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <input type="text" placeholder="Mobile No."
+                                                                        required>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <input type="text"
+                                                                        placeholder="Alternate Mobile No.">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-input">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <input type="text" placeholder="Primary Email"
+                                                                        required>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <input type="text" placeholder="Alternate Email">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+
+                                                <div class="offset-md-6"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
 
+        </div>
 
-
-        </main>
 
     </main>
 
@@ -375,14 +533,7 @@
 
     </footer>
 
-    <!-- <div class="converter-container">
-        <div class="input-group">
-            <label for="amount">Amount in NPR:</label>
-            <input type="number" id="amount" placeholder="Enter amount in NPR">
-        </div>
-        <button id="convert">Convert to USD</button>
-        <p id="result"></p>
-    </div> -->
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -417,17 +568,6 @@
             imageCrossfade: true,
             loadingIcon: "images/spinner.gif",
             lensSize: 100,
-        });
-
-    </script>
-
-    <script>
-        // Add this JavaScript code inside the script tag of your HTML
-        document.getElementById('convert').addEventListener('click', function () {
-            let amountInNpr = document.getElementById('amount').value;
-            let nprToUsdRate = 0.0083; // Update this rate as needed
-            let amountInUsd = amountInNpr * nprToUsdRate;
-            document.getElementById('result').textContent = amountInNpr + ' NPR is ' + amountInUsd.toFixed(2) + ' USD';
         });
 
     </script>
