@@ -1986,18 +1986,24 @@ thead tr th:first-child {
     DASHBOARD
 ***************/
 .dashboard {
-    /* position: relative; */
+    position: relative;
     margin: 8rem 0;
 }
 
+.admin-dashboard {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
 aside {
-    box-shadow: -9px 8px 14px 6px #d8d8d8;
+    /* box-shadow: -9px 8px 14px 6px #d8d8d8; */
     padding: 15px 0;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 12%;
+    width: 15%;
+    background-color: var(--primary-color);
 }
 
 .prof-photo {
@@ -2030,38 +2036,40 @@ aside {
     line-height: 15px;
 }
 
-.seller-nav div {
-    border-left: 3px solid #fff;
-}
-
 .seller-nav a {
     padding: 8px 15px 10px 15px;
     display: block;
-    font-size: 12px;
+    font-size: 1.6rem;
     font-weight: 700;
+    color: #fff;
 }
 
 .seller-nav a i {
-    padding-right: 10px;
+    width: 3rem;
+}
+
+.seller-nav a:hover {
+    background-color: var(--bs-btn-hover-bg);
 }
 
 .seller-nav .active {
-    border-left: 3px solid #ed1c24;
+    background-color: var(--bs-btn-hover-bg);
 }
 
-.seller-nav .active a {
-    color: #ed1c24;
-}
+/* .seller-nav a[data-id] {
+    background-color: var(--bs-btn-hover-bg);
 
-/* .content-wrapper {
+} */
+
+.admin-dashboard .content-wrapper {
     margin-left: 245px;
     padding-right: 15px;
-} */
+}
 
 .contactprofiletab {
     padding: 20px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .contactprofiletab span {
@@ -2140,6 +2148,114 @@ aside {
 
 .page-head {
     margin-top: 15px;
+}
+
+/* ----- ADMIN DASHBOARD ----- */
+.admin-dashboard {
+    background-color: #fafbfe;
+    padding: 2rem;
+    margin-bottom: 0;
+}
+
+.admin-dashboard section {
+    padding: 0;
+}
+
+.heading-business {
+    font-size: 3.2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.admin-pg {
+    font-family: var(--secondary-font);
+}
+
+.dash-card {
+    background-color: #fff;
+    box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+    padding: 2.4rem;
+    color: #444;
+    border-radius: .8rem;
+    margin-top: 2.4rem;
+}
+
+.business-dash,
+.order-dash {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.db-card-title {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+}
+
+.float-end {
+    line-height: 0;
+    align-items: center;
+}
+
+.float-end i {
+    font-size: 2rem;
+}
+
+.card-icon {
+    background-color: #08b2e3;
+    padding: 1rem;
+    border-radius: .8rem;
+    color: #fff;
+}
+
+.num {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.percent,
+.d-percent {
+    font-size: 1.4rem;
+    color: var(--bs-green);
+    /* border: 1px solid #ccc; */
+    border-radius: .8rem;
+    background-color: #f5f5f5;
+    padding: 4px 8px;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.d-percent {
+    color: var(--bs-red);
+}
+
+.percent i,
+.d-percent i {
+    margin-right: .8rem;
+    font-size: 1.2rem;
+}
+
+.sales-report {
+    background-color: #fff;
+    margin-top: 4rem;
+    box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+    padding: 2rem;
+    border-radius: .8rem;
+
+}
+
+.top-products td {
+    font-size: 1.6rem;
+}
+
+/* ----- ORDER BOX ----- */
+.order-box {
+    box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+    border-radius: .8rem;
 }
 
 /* ----- RESPONSIVE ----- */
@@ -2458,4 +2574,12 @@ aside {
     font-size: 2rem;
     background-color: var(--secondary-color);
     border: 0;
+}
+
+/* ---------------
+ADMIN DASHBOARD
+----------------*/
+
+.nav-dash {
+    display: block;
 }
