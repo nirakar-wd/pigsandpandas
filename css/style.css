@@ -2256,6 +2256,55 @@ aside {
 .order-box {
     box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
     border-radius: .8rem;
+    padding: 1.2rem;
+    background-color: #fff;
+}
+
+.order-box .table {
+    margin-bottom: 0;
+    border-radius: var(--bs-border-radius);
+}
+
+.order-box table th,
+.order-box table td  {
+    font-size: 1.6rem;
+    border-color: #dddddd;
+}
+
+.order-box tbody a {
+    color: var(--bs-btn-hover-bg);
+}
+
+.order-box tbody td {
+    color: #677788;
+}
+
+.order-box table tr {
+    text-align: left;
+}
+
+.paid,
+.pending,
+.cancelled,
+.failed {
+    background-color: var(--bs-green);
+    display: inline-block;
+    padding: .2rem 1rem;
+    color: #fff;
+    border-radius: .4rem;
+    font-size: 1.2rem
+}
+
+.pending {
+    background-color: var(--bs-teal);
+}
+
+.cancelled {
+    background-color: var(--bs-orange);
+}
+
+.failed {
+    background-color: var(--bs-red);
 }
 
 /* ----- RESPONSIVE ----- */
