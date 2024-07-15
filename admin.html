@@ -32,6 +32,9 @@
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-thin-rounded/css/uicons-thin-rounded.css'>
 
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
+
+
 </head>
 
 <body>
@@ -189,13 +192,13 @@
                     <div class="seller-nav">
                         <div class="active">
                             <a href="#" data-id="1"><i class="fas fa-home"></i>Dashboard</a>
-                            
+
                         </div>
                         <div>
                             <a href="#" data-id="2"><i class="fa-solid fa-file"></i>Orders</a>
                         </div>
                         <div>
-                            <a href="#" data-id="2"><i class="fa-solid fa-file"></i>Orders</a>
+                            <a href="#" data-id="3"><i class="fa-solid fa-square-plus"></i>Add Product</a>
                         </div>
                         <div>
                             <a href="#" data-id="3"><i class="fas fa-home"></i>Dashboard</a>
@@ -332,7 +335,7 @@
 
                     </div>
 
-                    <div class="order-dash busi active">
+                    <div class="order-dash busi">
                         <div class="heading-business mb-4">orders</div>
                         <div class="order-box">
                             <div class="row justify-content-center">
@@ -357,8 +360,8 @@
                                                     <td>$490</td>
                                                     <td>Mary Jane</td>
                                                     <td><span class="paid">
-                                                        paid
-                                                    </span></td>
+                                                            paid
+                                                        </span></td>
                                                     <td>
                                                         <span class="paid">shipped</span>
                                                     </td>
@@ -367,45 +370,30 @@
                                                 <tr>
                                                     <th scope="row">
                                                         <a href="#">#121212</a>
-    
+
                                                     </th>
                                                     <td>$490</td>
                                                     <td>Mary Jane</td>
                                                     <td>
-                                                        <span class="pending">pending</span></td>
+                                                        <span class="pending">pending</span>
+                                                    </td>
                                                     <td>
                                                         <span class="cancelled">
                                                             cancelled
                                                         </span>
-                                                
+
                                                     </td>
                                                     <td>2023-10-30</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">
                                                         <a href="#">#121212</a>
-    
+
                                                     </th>
                                                     <td>$490</td>
                                                     <td>Mary Jane</td>
                                                     <td><span class="cancelled">
-                                                        cancelled
-                                                    </span></td>
-                                                    <td>
-                                                        <span class="pending">processing</span>
-                                                    </td>
-                                                    <td>2023-10-30</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <a href="#">#121212</a>
-    
-                                                    </th>
-                                                    <td>$490</td>
-                                                    <td>Mary Jane</td>
-                                                    <td>
-                                                        <span class="failed">
-                                                            failed
+                                                            cancelled
                                                         </span></td>
                                                     <td>
                                                         <span class="pending">processing</span>
@@ -415,35 +403,175 @@
                                                 <tr>
                                                     <th scope="row">
                                                         <a href="#">#121212</a>
-    
+
                                                     </th>
                                                     <td>$490</td>
                                                     <td>Mary Jane</td>
-                                                    <td><span class="paid">
-                                                        paid
-                                                    </span></td>
+                                                    <td>
+                                                        <span class="failed">
+                                                            failed
+                                                        </span>
+                                                    </td>
                                                     <td>
                                                         <span class="pending">processing</span>
                                                     </td>
                                                     <td>2023-10-30</td>
                                                 </tr>
-                                                
-    
+                                                <tr>
+                                                    <th scope="row">
+                                                        <a href="#">#121212</a>
+
+                                                    </th>
+                                                    <td>$490</td>
+                                                    <td>Mary Jane</td>
+                                                    <td><span class="paid">
+                                                            paid
+                                                        </span></td>
+                                                    <td>
+                                                        <span class="pending">processing</span>
+                                                    </td>
+                                                    <td>2023-10-30</td>
+                                                </tr>
+
+
                                             </tbody>
                                         </table>
                                     </div>
-                                    
-                                    
+
+
                                 </div>
 
-                                
+
                             </div>
                         </div>
                     </div>
-                </section>
 
+                    <div class="add-product busi active">
+                        <div class="heading-business mb-4">add product</div>
+                        <div class="add-product-box">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="product-left">
+                                            <div class="form-group mb-4">
+                                                <label for="product-name" class="form-label">product name</label>
+                                                <input type="text" class="form-control" id="product-name" name="product">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="productDescription" class="form-label">product
+                                                    description</label>
+                                                <textarea class="form-control" id="productDescription" rows="5"
+                                                    placeholder="Write a description here..."></textarea>
+                                            </div>
+    
+                                            <div class="display-media">
+                                                <label for="productDescription" class="form-label">display image</label>
+                                                    <div class="media-preview">Please choose your image
+                                                        <input type="file" name="file" multiple>
+                                                        <br>
+                                                        <i class="fa-solid fa-image"></i>
+                                                    </div>
+                                            
+                                                
+                                                <!-- <input type="file" 
+                                                class="filepond"
+                                                name="filepond" 
+                                                multiple 
+                                                data-allow-reorder="true"
+                                                data-max-file-size="3MB"
+                                                data-max-files="10"> -->
+                                                  
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
 
+                                    <div class="col-md-4">
+                                        <div class="product-right">
+                                            <form>
+                                                
+                                                <label for="price" class="form-label">
+                                                    price</label>
+                                                <div class="input-group mb-3">
+                                                    
+                                                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">USD</button>
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                      <li><a class="dropdown-item" href="#">NPR</a></li>
+                                                      <li><a class="dropdown-item" href="#">EUR</a></li>
+                                                      <li><a class="dropdown-item" href="#">AUD</a></li>
+                                                      <li><hr class="dropdown-divider"></li>
+                                                     
+                                                    </ul>
+                                                  </div>
+                                                  
+
+                                                <div class="organisation">
+                                                    <div class="mb-3">
+                                                        <label for="vendor" class="form-label">Vendor</label>
+                                                        <input type="text" id="vendor" placeholder="eg. Nike" class="form-control">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="categories" class="form-label">
+                                                            category
+                                                        </label>
+                                                        <select name="categories" id="categories" class="form-control">
+                                                            <option value="1">
+                                                                Men's clothing
+                                                            </option>
+                                                            <option value="2">
+                                                                WoMen's clothing
+                                                            </option>
+                                                            <option value="3">
+                                                                Children's clothing
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="mb-3">
+                                                        <label for="tags" class="form-label">Tags</label>
+                                                        <select name="tags" id="tags" class="form-control">
+                                                            <option value="1">tag1</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="mb-3">
+                                                        <label for="collections" class="form-label">
+                                                            Collections
+                                                        </label>
+                                                        <select name="collections" id="collections" class="form-control">
+                                                            <option value="1">Winter</option>
+                                                            <option value="1">Winter</option>
+                                                            <option value="1">Winter</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                <div class="btns">
+                                                    <button type="submit" class="btn btn-save">Save</button>
+                                                    <button type="submit" class="btn btn-delete">Delete</button>
+                                                    
+                                                </div>
+                                                
+                                            </form>
+                                            
+                                        </div>
+
+                                        
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
             </div>
+            </section>
+
+
+        </div>
 
         </div>
     </main>
@@ -617,6 +745,9 @@
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+    <!-- <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script> -->
+
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
 
     <script>
         const ctx = document.getElementById('myChart');
@@ -652,14 +783,27 @@
             panels[n - 1].classList.add('active')
         }
 
-       
-$('.seller-nav div').click(function (){
-    $(this).siblings('div').removeClass("active"); // remove active class from sibling anchors
-    $(this).toggleClass("active");
-})
-            
+
+        $('.seller-nav div').click(function () {
+            $(this).siblings('div').removeClass("active"); // remove active class from sibling anchors
+            $(this).toggleClass("active");
+        })
+
     </script>
 
+
+<!-- <script>
+     const inputElement = document.querySelector('input[type="file"]');
+const credits = false;
+// create a FilePond instance at the input element location
+const pond = FilePond.create(inputElement);
+// attributes have been set to pond options
+console.log(pond.name); // 'filepond'
+console.log(pond.maxFiles); // 10
+console.log(pond.required); // true
+
+</script> -->
+   
 </body>
 
 </html>

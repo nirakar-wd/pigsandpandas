@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pigs & Bears</title>
+    <title>Pigs & Pandas</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,13 +59,37 @@
                                 <i class="fa-solid fa-cart-shopping"></i>
 
                             </a>
-                            <a href="signin.html" class="cart-btn">
+                            <a href="signin.html" class="cart-btn" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 <i class="fa-solid fa-user"></i>
-                                <span class="text">login</span>
+
+                                <!-- <span class="text">login</span> -->
                             </a>
-                            <a href="register.html" class="cart-btn">
-                                sign up
-                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="text-center user-pp">
+                                    <span class="dropdown-item" href="#">
+                                        <!-- <i class="fa-regular fa-user"></i> -->
+                                        <img src="img/pexels-andrea-piacquadio-774909 1.png" alt="user-pp" class="propic">
+
+                                    </span>
+                                    Hi Ram Bahadur
+                                </li>
+                                <li class="user-lo mb-2">
+                                    <a class="dropdown-item" href="register.html">
+                                        <i class="fa-solid fa-user-plus"></i>Sign Up
+                                    </a>
+                                </li>
+                                <li class="user-lo">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                        Logout
+                                    </a>
+                                </li>
+
+                            </ul>
+
+
+
                         </div>
                     </div>
                 </div>
@@ -95,7 +119,7 @@
                                 <li><a href="product.html">product</a></li>
                                 <li><a href='product.html'>product</a></li>
                                 <li><a href='product.html'>product</a></li>
-                               
+
                             </ul>
                         </li>
 
@@ -168,7 +192,7 @@
         </nav>
 
 
-        
+
     </header>
 
     <main>
@@ -176,39 +200,43 @@
         <div class="container">
             <div class="login">
                 <div class="container">
-                  <h2 class="heading-secondary">Login</h2>
-                 
-                  <div class="login-form-grids">
-                                            <form method="post">
-                      <input type="hidden" name="" >
-                      
-                                <input type="text" class="form-control" placeholder="Email" name="email"  value=""  required autofocus />
-                       
-                    
-                      <input type="password" class="form-control" placeholder="Password" name="password" required />
-                       
-                      <div class="forgot">
-                        <a href="#"  data-dismiss="modal" data-toggle="modal" data-target="#ForgetPasswordformModal">Forgot Password?</a>
-                      </div>
-                      <!-- <div class="CBox">
+                    <h2 class="heading-secondary">Login</h2>
+
+                    <div class="login-form-grids">
+                        <form method="post">
+                            <input type="hidden" name="">
+
+                            <input type="text" class="form-control" placeholder="Email" name="email" value="" required
+                                autofocus />
+
+
+                            <input type="password" class="form-control" placeholder="Password" name="password"
+                                required />
+
+                            <div class="forgot">
+                                <a href="#" data-dismiss="modal" data-toggle="modal"
+                                    data-target="#ForgetPasswordformModal">Forgot Password?</a>
+                            </div>
+                            <!-- <div class="CBox">
                         <label>
                           <input type="checkbox" name="remember" >
                           Remember me
                         </label>
                       </div> -->
-                      <input type="submit" value="Login" >
-                      <p> </p>
-                    </form>
-                  </div>
-                  <!-- <h4 class="">For New People</h4> -->
-                  <p class="login-para">
-                    Dont have an account?
-                    <a href="register.html"> Register Here</a> </p>
+                            <input type="submit" value="Login">
+                            <p> </p>
+                        </form>
+                    </div>
+                    <!-- <h4 class="">For New People</h4> -->
+                    <p class="login-para">
+                        Dont have an account?
+                        <a href="register.html"> Register Here</a>
+                    </p>
                 </div>
-              </div>
+            </div>
         </div>
-        
-        
+
+
 
     </main>
 
@@ -366,6 +394,8 @@
 
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 
     <!-- TINY SLIDER -->

@@ -16,6 +16,7 @@
     --bs-btn-hover-color: #fff;
     --bs-card-title-color: #1b3444;
     --bs-btn-close-color: #fff;
+    --box-shadow:  0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 html {
@@ -157,6 +158,47 @@ p {
 .cart-btn:hover {
     color: #fff;
     transform: scale(1.1);
+}
+
+.dropdown-menu {
+    width: 20rem;
+    padding: 1.6rem 1rem;
+    border-radius: .8rem;
+    border: 0;
+    box-shadow: var(--box-shadow);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: transparent;
+}
+.user-pp {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: .8rem;
+}
+
+.user-pp i {
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
+
+.propic {
+    width: 5rem;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1.4rem;
+}
+
+.user-lo i {
+    margin-right: 1rem;
+    color: var(--secondary-color);
+}
+
+.user-lo:hover  a{
+    background-color: #eee;
+
 }
 
 .nav-top {
@@ -1277,6 +1319,21 @@ p.est {
     background: #d8703f;
 }
 
+/* ----- WHOLESALE FORM -=---- */
+
+.msgbox {
+    height: 10rem;
+    width: 100%;
+    background-color: #d9d9d9;
+    border: 0;
+    border-radius: .375rem;
+    font-size: 1.6rem;
+    color: #999;
+    padding: .8rem;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+}
+
 /* CATEGORIES */
 
 .product-detail {
@@ -1883,7 +1940,9 @@ thead tr th:first-child {
     margin-bottom: 0.6rem;
     font-weight: 700;
 }
-
+/* .filepond--root{
+    height: 100rem;
+} */
 .pp-2 {
     border-bottom: 1px solid #888;
     padding-bottom: 1rem;
@@ -2100,7 +2159,7 @@ aside {
     padding: 4px 0;
 }
 
-.form-label {
+/* .form-label {
     position: absolute;
     transition: 0.25s ease;
     -moz-transition: 0.25s ease;
@@ -2110,7 +2169,7 @@ aside {
     color: #cecece;
     left: 17px;
     top: 5px;
-}
+} */
 
 .input__form input:focus + .form-label,
 .input__form input:valid + .form-label {
@@ -2176,12 +2235,13 @@ aside {
     box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
     padding: 2.4rem;
     color: #444;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     margin-top: 2.4rem;
 }
 
 .business-dash,
-.order-dash {
+.order-dash,
+.add-product {
     display: none;
 }
 
@@ -2208,7 +2268,7 @@ aside {
 .card-icon {
     background-color: #08b2e3;
     padding: 1rem;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     color: #fff;
 }
 
@@ -2222,7 +2282,7 @@ aside {
     font-size: 1.4rem;
     color: var(--bs-green);
     /* border: 1px solid #ccc; */
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     background-color: #f5f5f5;
     padding: 4px 8px;
     width: fit-content;
@@ -2235,7 +2295,7 @@ aside {
 
 .percent i,
 .d-percent i {
-    margin-right: .8rem;
+    margin-right: 0.8rem;
     font-size: 1.2rem;
 }
 
@@ -2244,8 +2304,7 @@ aside {
     margin-top: 4rem;
     box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
     padding: 2rem;
-    border-radius: .8rem;
-
+    border-radius: 0.8rem;
 }
 
 .top-products td {
@@ -2255,7 +2314,7 @@ aside {
 /* ----- ORDER BOX ----- */
 .order-box {
     box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     padding: 1.2rem;
     background-color: #fff;
 }
@@ -2266,7 +2325,7 @@ aside {
 }
 
 .order-box table th,
-.order-box table td  {
+.order-box table td {
     font-size: 1.6rem;
     border-color: #dddddd;
 }
@@ -2289,10 +2348,10 @@ aside {
 .failed {
     background-color: var(--bs-green);
     display: inline-block;
-    padding: .2rem 1rem;
+    padding: 0.2rem 1rem;
     color: #fff;
-    border-radius: .4rem;
-    font-size: 1.2rem
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
 }
 
 .pending {
@@ -2305,6 +2364,94 @@ aside {
 
 .failed {
     background-color: var(--bs-red);
+}
+
+/* ----- ADD PRODUCT ----- */
+
+.add-product .form-label {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.add-product .form-control {
+    font-size: 1.6rem;
+    font-family: var(--secondary-font);
+}
+
+.display-media input {
+    display: none;
+}
+
+.media-preview {
+    padding: 5rem;
+    border: 1px dashed #cbd0dd;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30rem;
+    display: flex;
+    background-color: #fff;
+}
+
+.media-preview i {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.product-right,
+.product-left{
+    box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+    padding: 2rem;
+    border-radius: .8rem;
+}
+
+.right-sidebar input::placeholder {
+    color: #aaa;
+    font-size: 1.4rem;
+}
+
+.dropdown-toggle {
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: 1px solid #ddd;
+}
+
+.dropdown-toggle:hover {
+    background-color: var(--bs-btn-hover-bg);
+}
+
+.dropdown-item {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+}
+
+
+.btn-save,
+.btn-delete {
+    font-size: 1.6rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: .8rem 1.6rem;
+    border-radius: .8rem;
+    width: 100%;
+    font-weight: 700;
+}
+
+
+.btn-delete {
+    margin-left: .8rem;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
 
 /* ----- RESPONSIVE ----- */
