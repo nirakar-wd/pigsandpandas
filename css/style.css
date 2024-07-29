@@ -16,7 +16,7 @@
     --bs-btn-hover-color: #fff;
     --bs-card-title-color: #1b3444;
     --bs-btn-close-color: #fff;
-    --box-shadow:  0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --box-shadow:  0px 0px 35px 0px rgba(154, 161, 171, 0.15);
 }
 
 html {
@@ -101,6 +101,22 @@ p {
     margin-top: 1.2rem;
     margin-bottom: 2rem;
     font-weight: 700;
+}
+
+.heading-fourth {
+    font-size: var(--text-size);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.heading-fifth {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.fs-5 {
+    text-transform: capitalize;
 }
 
 /* ----- HEADER ----- */
@@ -2241,7 +2257,8 @@ aside {
 
 .business-dash,
 .order-dash,
-.add-product {
+.add-product,
+.userprofile {
     display: none;
 }
 
@@ -2406,6 +2423,7 @@ aside {
     box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
     padding: 2rem;
     border-radius: .8rem;
+    background-color: #fff;
 }
 
 .right-sidebar input::placeholder {
@@ -2452,6 +2470,113 @@ aside {
     background-color: transparent;
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
+}
+
+/* ----- PROFILE ----- */
+
+.profile-user-box {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+    margin-bottom: 1.6rem;
+    padding: 2.4rem;
+    border-radius: 0.8rem;
+    color: #fff;
+}
+
+.avatar {
+    width: 9rem;
+    height: 9rem;
+}
+
+.img-thumbnail {
+    padding: 0.4rem;
+    background-color: var(--text-color-1);
+    border: 1px solid #dee2e6;
+    max-width: 100%;
+    height: auto;
+}
+
+.profile-settings .nav {
+    display: flex;
+}
+
+.nav-tabs .nav-item {
+    margin-right: 2rem;
+}
+
+.profile-settings .nav-link {
+    border: none;
+    color: #000;
+    font-weight: 600;
+    padding:  .8rem 2.4rem;
+}
+
+.profile-settings .nav-link.active,
+.nav-tabs .nav-link:hover  {
+    /* background-color: var(--fourth-color); */
+    color: var(--text-color-2);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.seller-info {
+    box-shadow: var(--box-shadow);
+    padding: 2.4rem;
+    margin-top: 2.4rem;
+    background-color: #fff;
+    border-radius: .8rem;
+}
+
+.profile-product table tr {
+    text-align: left;
+}
+
+.profile-product table th,
+.profile-product table td {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.seller-info .form-label,
+.seller-info .form-control {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.form-label span {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    color: #555;
+}
+
+.seller-info .btn-save {
+    width: auto;
+}
+
+/* ----- ADD CATEGORY ----- */
+
+.cat-tag {
+    margin: 3px 0 3px 5px;
+    background-color: #f9f9f9;
+    padding: 2px 7px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    display: inline-block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-size: 12px;
+    letter-spacing: 0.02rem;
+}
+
+.add-category .btn {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.add-category .order-box {
+    background-color: #fff;
 }
 
 /* ----- RESPONSIVE ----- */
