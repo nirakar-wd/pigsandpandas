@@ -2446,6 +2446,19 @@ aside {
     font-weight: 600;
 }
 
+.add-product .form-select {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+}
+
+.form-check-label {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #888;
+    vertical-align: sub;
+}
+
 .btns {
     display: flex;
     justify-content: space-between;

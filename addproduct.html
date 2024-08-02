@@ -181,23 +181,19 @@
     <main>
         <div>
 
-
-
             <div class="admin-dashboard">
-
-
 
                 <aside>
 
                     <div class="seller-nav">
-                        <div class="active">
+                        <div>
                             <a href="#" data-id="1"><i class="fas fa-home"></i>Dashboard</a>
 
                         </div>
                         <div>
                             <a href="#" data-id="2"><i class="fa-solid fa-file"></i>Orders</a>
                         </div>
-                        <div>
+                        <div class="active">
                             <a href="#" data-id="3"><i class="fa-solid fa-square-plus"></i>Add Product</a>
                         </div>
                         <div>
@@ -211,7 +207,7 @@
                 </aside>
 
                 <section class="content-wrapper">
-                    <div class="business-dash busi active">
+                    <!-- <div class="business-dash busi">
                         <div class="heading-business">
                             good morning
                         </div>
@@ -331,9 +327,9 @@
                         </div>
 
 
-                    </div>
+                    </div> -->
 
-                    <div class="order-dash busi">
+                    <!-- <div class="order-dash busi">
                         <div class="heading-business mb-4">orders</div>
                         <div class="order-box">
                             <div class="row justify-content-center">
@@ -442,9 +438,9 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="add-product busi">
+                    <div class="add-product busi active">
                         <div class="heading-business mb-4">add product</div>
                         <div class="add-product-box">
                             <form>
@@ -453,6 +449,11 @@
                                         <div class="product-left">
                                             <div class="form-group mb-4">
                                                 <label for="product-name" class="form-label">product name</label>
+                                                <input type="text" class="form-control" id="product-name"
+                                                    name="product">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label for="product-name" class="form-label">slug</label>
                                                 <input type="text" class="form-control" id="product-name"
                                                     name="product">
                                             </div>
@@ -489,38 +490,61 @@
                                         <div class="product-right">
                                             <form>
 
-                                                <label for="price" class="form-label">
-                                                    price</label>
-                                                <div class="input-group mb-3">
-
-                                                    <input type="text" class="form-control"
-                                                        aria-label="Text input with dropdown button">
-                                                    <button class="btn dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">USD</button>
-                                                    <ul class="dropdown-menu dropdown-menu-end">
-                                                        <li><a class="dropdown-item" href="#">NPR</a></li>
-                                                        <li><a class="dropdown-item" href="#">EUR</a></li>
-                                                        <li><a class="dropdown-item" href="#">AUD</a></li>
-                                                        <li>
-                                                            <hr class="dropdown-divider">
-                                                        </li>
-
-                                                    </ul>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="price" class="form-label">
+                                                            price</label>
+                                                        <div class="input-group mb-3">
+        
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Text input with dropdown button">
+                                                            <button class="btn dropdown-toggle" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">$</button>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a class="dropdown-item" href="#">NPR</a></li>
+                                                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                                                <li><a class="dropdown-item" href="#">AUD</a></li>
+                                                                <li>
+                                                                    <hr class="dropdown-divider">
+                                                                </li>
+        
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="price" class="form-label">
+                                                            compare price</label>
+                                                        <div class="input-group mb-3">
+        
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Text input with dropdown button">
+                                                            <button class="btn dropdown-toggle" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">$</button>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a class="dropdown-item" href="#">NPR</a></li>
+                                                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                                                <li><a class="dropdown-item" href="#">AUD</a></li>
+                                                                <li>
+                                                                    <hr class="dropdown-divider">
+                                                                </li>
+        
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
+
+                                                
+                                                
 
 
                                                 <div class="organisation">
-                                                    <div class="mb-3">
-                                                        <label for="vendor" class="form-label">Vendor</label>
-                                                        <input type="text" id="vendor" placeholder="eg. Nike"
-                                                            class="form-control">
-                                                    </div>
+                                                    
 
                                                     <div class="mb-3">
                                                         <label for="categories" class="form-label">
                                                             category
                                                         </label>
-                                                        <select name="categories" id="categories" class="form-control">
+                                                        <select name="categories" id="categories" class="form-select">
                                                             <option value="1">
                                                                 Men's clothing
                                                             </option>
@@ -534,21 +558,47 @@
                                                     </div>
 
                                                     <div class="mb-3">
-                                                        <label for="tags" class="form-label">Tags</label>
-                                                        <select name="tags" id="tags" class="form-control">
-                                                            <option value="1">tag1</option>
+                                                        <label for="categories" class="form-label">
+                                                            sub-category
+                                                        </label>
+                                                        <select name="categories" id="categories" class="form-select">
+                                                            <option value="1">
+                                                                Men's clothing
+                                                            </option>
+                                                            <option value="2">
+                                                                WoMen's clothing
+                                                            </option>
+                                                            <option value="3">
+                                                                Children's clothing
+                                                            </option>
                                                         </select>
                                                     </div>
 
                                                     <div class="mb-3">
+                                                        <label for="sku" class="form-label">SKU</label>
+                                                        <input type="text" class="form-control" id="sku">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                              track quantity
+                                                            </label>
+                                                          </div>
+                                                        <label for="sku" class="form-label">quantity</label>
+                                                        <input type="text" class="form-control" id="sku">
+                                                    </div>
+
+                                                    <div class="mb-3">
                                                         <label for="collections" class="form-label">
-                                                            Collections
+                                                            Status
                                                         </label>
                                                         <select name="collections" id="collections"
                                                             class="form-control">
-                                                            <option value="1">Winter</option>
-                                                            <option value="1">Winter</option>
-                                                            <option value="1">Winter</option>
+                                                            <option value="1">Active</option>
+                                                            <option value="2">Inactive</option>
+                                                     
                                                         </select>
                                                     </div>
 
@@ -573,7 +623,7 @@
 
                     </div>
 
-                    <div class="add-product add-category busi">
+                    <!-- <div class="add-product add-category busi">
                         <div class="heading-business mb-4">add category</div>
                         <div class="add-product-box">
                             <form>
@@ -748,9 +798,9 @@
                             </form>
                         </div>
 
-                    </div>
+                    </div> -->
 
-                    <div class="userprofile busi">
+                    <!-- <div class="userprofile busi">
                         <div class="heading-business mb-4">profile</div>
                         <div class="profile-user-box">
                             <div class="row align-items-center">
@@ -935,8 +985,8 @@
                                                         <label for="lastname" class="form-label">Last Name</label>
                                                         <input type="text" class="form-control" id="lastname" placeholder="Enter last name">
                                                     </div>
-                                                </div> <!-- end col -->
-                                            </div> <!-- end row -->
+                                                </div>
+                                            </div>
 
                                             <div class="row">
                                                 <div class="col-8">
@@ -944,15 +994,15 @@
                                                         <label for="userbio" class="form-label">Bio</label>
                                                         <textarea class="form-control" id="userbio" rows="4" placeholder="Write something..."></textarea>
                                                     </div>
-                                                </div> <!-- end col -->
+                                                </div>
 
                                                 <div class="col-4">
                                                     <div class="mb-3">
                                                         <label for="userimg" class="form-label">User Image</label>
                                                         <input type="file" name="userimg" id="userimg" class="form-control">
                                                     </div>
-                                                </div> <!-- end col -->
-                                            </div> <!-- end row -->
+                                                </div>
+                                            </div>
 
                                 
 
@@ -970,8 +1020,8 @@
                                                         <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
                                                         <span class="form-text text-muted"><small>If you want to change password please <a href="javascript: void(0);">click</a> here.</small></span>
                                                     </div>
-                                                </div> <!-- end col -->
-                                            </div> <!-- end row -->
+                                                </div>
+                                            </div>
 
                                             <div class="text-end">
                                                 <button type="submit" class="btn mt-2 btn-save"><i class="mdi mdi-content-save"></i> Save</button>
@@ -985,10 +1035,9 @@
 
                               
                         </div>
-                    </div>
+                    </div> -->
 
                 </section>
-
 
             </div>
 
@@ -1191,7 +1240,7 @@
         });
     </script>
 
-    <script>
+    <!-- <script>
         document.querySelectorAll('aside a')
             .forEach(e => e.addEventListener('click', _ => change(e.dataset.id)))
 
@@ -1208,7 +1257,7 @@
             $(this).toggleClass("active");
         })
 
-    </script>
+    </script> -->
 
 
     <!-- <script>
