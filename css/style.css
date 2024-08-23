@@ -2137,7 +2137,7 @@ aside {
 } */
 
 .admin-dashboard .content-wrapper {
-    margin-left: 245px;
+    margin-left: 16%;
     padding-right: 15px;
 }
 
@@ -2346,10 +2346,10 @@ aside {
     font-size: 1.6rem;
     border-color: #dddddd;
 }
-
+/* 
 .order-box tbody a {
     color: var(--bs-btn-hover-bg);
-}
+} */
 
 .order-box tbody td {
     color: #677788;
@@ -2583,7 +2583,7 @@ aside {
     letter-spacing: 0.02rem;
 }
 
-.add-category .btn {
+.btn-group .btn {
     font-size: 1.2rem;
     text-transform: capitalize;
 }
@@ -2592,6 +2592,25 @@ aside {
     background-color: #fff;
 }
 
+.btn a {
+    color: #fff;
+}
+
+.searchpro {
+    margin-bottom: 2.4rem;
+}
+
+.searchpro input {
+    border: 1px solid #ddd;
+    padding: .5rem;
+    font-size: 1.4rem;
+    
+}
+
+
+.searchpro input::placeholder {
+    font-size: 1.4rem;
+}
 /* ----- RESPONSIVE ----- */
 @media only screen and (max-width: 75em) {
     html {
