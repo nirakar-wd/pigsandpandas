@@ -32,7 +32,9 @@
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-thin-rounded/css/uicons-thin-rounded.css'>
 
-    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
 
 
 </head>
@@ -207,238 +209,7 @@
                 </aside>
 
                 <section class="content-wrapper">
-                    <!-- <div class="business-dash busi">
-                        <div class="heading-business">
-                            good morning
-                        </div>
-                        <p class="admin-pg">Here’s what’s going on at your business right now
-                        </p>
-
-                        <div class="dash-details">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="dash-card clearfix">
-                                        <div class="float-end card-icon d-flex">
-                                            <i class="fi fi-tr-users-alt"></i>
-
-                                        </div>
-                                        <h6 class="db-card-title">customers</h6>
-                                        <div class="num">3000</div>
-                                        <div class="percent"><i class="fa-solid fa-up-long"></i>5.27%</div>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="dash-card clearfix">
-                                        <div class="float-end card-icon d-flex">
-                                            <i class="fi fi-tr-cart-arrow-down"></i>
-
-                                        </div>
-                                        <h6 class="db-card-title">orders</h6>
-                                        <div class="num">6000</div>
-                                        <div class="d-percent"><i class="fa-solid fa-down-long"></i>3%</div>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="dash-card clearfix">
-                                        <div class="float-end card-icon d-flex">
-                                            <i class="fi fi-tr-revenue-alt"></i>
-
-                                        </div>
-                                        <h6 class="db-card-title">revenue</h6>
-                                        <div class="num">$7002</div>
-                                        <div class="percent"><i class="fa-solid fa-up-long"></i>5.27%</div>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="dash-card clearfix">
-                                        <div class="float-end card-icon d-flex">
-                                            <i class="fi fi-tr-chart-arrow-grow"></i>
-
-                                        </div>
-                                        <h6 class="db-card-title">growth</h6>
-                                        <div class="num">+23%</div>
-                                        <div class="percent"><i class="fa-solid fa-up-long"></i>5.27%</div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="sales-report">
-                            <div class="row">
-                                <div class="col-md-8">
-
-                                    <div>
-                                        <div class="heading-business">
-                                            sales report
-                                        </div>
-
-                                        <div>
-                                            <canvas id="myChart"></canvas>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-4">
-                                    <div class="top-products">
-                                        <div class="heading-business">top products</div>
-                                        <table class="table">
-
-                                            <tbody>
-                                                <tr>
-
-                                                    <td>Item</td>
-                                                    <td>Sold</td>
-                                                    <td>Price</td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Felt</td>
-                                                    <td>39</td>
-                                                    <td>$10</td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Felt</td>
-                                                    <td>39</td>
-                                                    <td>$10</td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Felt</td>
-                                                    <td>39</td>
-                                                    <td>$10</td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Felt</td>
-                                                    <td>39</td>
-                                                    <td>$10</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div> -->
-
-                    <!-- <div class="order-dash busi">
-                        <div class="heading-business mb-4">orders</div>
-                        <div class="order-box">
-                            <div class="row justify-content-center">
-                                <div class="col-md-12">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">order id</th>
-                                                    <th scope="col">total</th>
-                                                    <th scope="col">customer</th>
-                                                    <th scope="col">payment status</th>
-                                                    <th scope="col">fulfilment status</th>
-                                                    <th scope="col">date</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <a href="#">#121212</a>
-                                                    </th>
-                                                    <td>$490</td>
-                                                    <td>Mary Jane</td>
-                                                    <td><span class="paid">
-                                                            paid
-                                                        </span></td>
-                                                    <td>
-                                                        <span class="paid">shipped</span>
-                                                    </td>
-                                                    <td>2023-10-30</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <a href="#">#121212</a>
-
-                                                    </th>
-                                                    <td>$490</td>
-                                                    <td>Mary Jane</td>
-                                                    <td>
-                                                        <span class="pending">pending</span>
-                                                    </td>
-                                                    <td>
-                                                        <span class="cancelled">
-                                                            cancelled
-                                                        </span>
-
-                                                    </td>
-                                                    <td>2023-10-30</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <a href="#">#121212</a>
-
-                                                    </th>
-                                                    <td>$490</td>
-                                                    <td>Mary Jane</td>
-                                                    <td><span class="cancelled">
-                                                            cancelled
-                                                        </span></td>
-                                                    <td>
-                                                        <span class="pending">processing</span>
-                                                    </td>
-                                                    <td>2023-10-30</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <a href="#">#121212</a>
-
-                                                    </th>
-                                                    <td>$490</td>
-                                                    <td>Mary Jane</td>
-                                                    <td>
-                                                        <span class="failed">
-                                                            failed
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        <span class="pending">processing</span>
-                                                    </td>
-                                                    <td>2023-10-30</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <a href="#">#121212</a>
-
-                                                    </th>
-                                                    <td>$490</td>
-                                                    <td>Mary Jane</td>
-                                                    <td><span class="paid">
-                                                            paid
-                                                        </span></td>
-                                                    <td>
-                                                        <span class="pending">processing</span>
-                                                    </td>
-                                                    <td>2023-10-30</td>
-                                                </tr>
-
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div> -->
+                    
 
                     <div class="add-product busi active">
                         <div class="heading-business mb-4">add product</div>
@@ -464,24 +235,33 @@
                                                     placeholder="Write a description here..."></textarea>
                                             </div>
 
-                                            <div class="display-media">
-                                                <label for="productDescription" class="form-label">display image</label>
-                                                <div class="media-preview">Please choose your image
-                                                    <input type="file" name="file" multiple>
-                                                    <br>
-                                                    <i class="fa-solid fa-image"></i>
+                                            <label class="form">display media</label>
+                                            <!--begin::Form-->
+                                            <form class="form" action="/file-upload">
+                                                <!--begin::Input group-->
+                                                <div class="fv-row">
+                                                    <!--begin::Dropzone-->
+                                                    <div class="dropzone add-dz" id="kt_dropzonejs_example_1">
+                                                        <!--begin::Message-->
+                                                        <div class="dz-message needsclick">
+                                                            <i class="fa-solid fa-file-image"></i>
+                                                            <span class="path1"></span><span class="path2"></span></i>
+
+                                                            <!--begin::Info-->
+                                                            <div class="ms-4">
+
+                                                                <span class="fs-7 fw-semibold text-gray-500">Drop files
+                                                                    here or click to upload.</span>
+                                                            </div>
+                                                            <!--end::Info-->
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Dropzone-->
                                                 </div>
+                                                <!--end::Input group-->
+                                            </form>
+                                            <!--end::Form-->
 
-
-                                                <!-- <input type="file" 
-                                                class="filepond"
-                                                name="filepond" 
-                                                multiple 
-                                                data-allow-reorder="true"
-                                                data-max-file-size="3MB"
-                                                data-max-files="10"> -->
-
-                                            </div>
                                         </div>
 
                                     </div>
@@ -1213,7 +993,7 @@
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script> -->
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
 
     <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
 
@@ -1260,17 +1040,29 @@
     </script> -->
 
 
-    <!-- <script>
-     const inputElement = document.querySelector('input[type="file"]');
-const credits = false;
-// create a FilePond instance at the input element location
-const pond = FilePond.create(inputElement);
-// attributes have been set to pond options
-console.log(pond.name); // 'filepond'
-console.log(pond.maxFiles); // 10
-console.log(pond.required); // true
+    <script>
 
-</script> -->
+
+
+        var myDropzone = new Dropzone("#kt_dropzonejs_example_1", {
+            url: "#", // Set the url for your upload script location
+            paramName: "file", // The name that will be used to transfer the file
+            maxFiles: 10,
+            maxFilesize: 10, // MB
+            addRemoveLinks: true,
+            accept: function (file, done) {
+                if (file.name == "wow.jpg") {
+                    done("Naha, you don't.");
+                } else {
+                    done();
+                }
+            }
+        });
+
+
+    </script>
+
+
 
 </body>
 
